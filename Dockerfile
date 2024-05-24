@@ -38,26 +38,21 @@ RUN apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugi
 
 
 
-# Install Node.js (Mattifesto v3)
+# Install Node.js (Mattifesto 2024-05-19T17:43:48-07:00)
 #
-# 2024-02-21
+# 2024-02-21, 2024-05-19
 #
-# On the following page, Node.js recommends using the NodeSource repository to
-# install Node.js.
+# On the following page, Node.js recommends using the NodeSource repository to install Node.js.
 #
 # https://nodejs.org/en/download/package-manager#debian-and-ubuntu-based-linux-distributions
 #
-# NodeSource had some issues in the recent past where their installation
-# instructions were too complex and difficult to use in a Dockerfile. They have
-# fixed this and say, "Installation Scripts: Back by popular demand, the
-# installation scripts have returned and are better than ever. See the
-# installation instructions below for details on how to use them."
+# NodeSource had some issues in the recent past where their installation instructions were too complex and difficult to use in a Dockerfile. They have fixed this and say, "Installation Scripts: Back by popular demand, the installation scripts have returned and are better than ever. See the installation instructions below for details on how to use them."
 #
 # The command below comes from this page:
 #
 # https://github.com/nodesource/distributions?tab=readme-ov-file#debian-and-ubuntu-based-distributions
 
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - &&\
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - &&\
     apt-get install -y nodejs
 
 
