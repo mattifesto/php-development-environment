@@ -17,13 +17,6 @@ RUN apt-get install -y ack
 
 
 
-# Debian - Install ack (MC v1)
-
-RUN apt-get update
-RUN apt-get install -y ack
-
-
-
 # Debian - Install Docker (2024-02-26)
 # https://docs.docker.com/engine/install/debian/
 
